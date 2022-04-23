@@ -1,0 +1,153 @@
+.PMain {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: auto;
+  min-height: 100vh;
+}
+
+.PMain__city {
+  font-size: 30px;
+  line-height: 34px;
+  color: var(--font_black);
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.PMain__restaurants-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: -32px;
+  margin-bottom: 80px;
+}
+
+.PMain__search {
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 8px;
+  border-bottom: 1px solid var(--border_grey);
+}
+
+.PRestaurants-choose {
+  flex-basis: 100%;
+  padding-left: 32px;
+  flex-grow: 0;
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+  scroll-behavior: auto;
+}
+
+.PRestaurants-choose__link {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  text-decoration: none;
+  scroll-behavior: auto;
+}
+
+.PRestaurants-choose__photo {
+  width: 300px;
+  height: 256px;
+  margin-left: 1px;
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-out;
+  object-fit: cover;
+  scroll-behavior: auto;
+  border-radius: 50%;
+}
+
+.PRestaurants-choose__name {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--font_black);
+  scroll-behavior: auto;
+}
+
+.PRestaurants-choose__about {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--font_grey);
+  scroll-behavior: auto;
+}
+.PSearch {
+  position: relative;
+  background: #f8f6f6;
+  width: calc(50%);
+  padding-bottom: 15px;
+  padding-top: 8px;
+  border: 1px solid var(--background_black);
+  border-radius: 25px;
+}
+
+.PSearch__text {
+  background: #f8f6f6;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  border: black;
+  outline: black;
+  border-radius: 30px;
+}
+
+.Pidentifiers {
+  font-size: 20px;
+  line-height: 34px;
+  color: var(--font_black);
+}
+
+.Pcontainer-login100-form-btn {
+  width: 10%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Plogin100-form-btn {
+  font-family: UberMoveText-Medium, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #57b846;
+  border-radius: 25px;
+
+  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.Plogin100-form-btn:hover {
+  background-color: #333333;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
