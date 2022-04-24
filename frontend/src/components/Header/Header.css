@@ -7,6 +7,7 @@
   width: calc(100% + 1px);
   z-index: 10;
   background: var(--white);
+  background-color: #A7D3FF ;
 }
 
 .Header__wrapper {
@@ -22,10 +23,17 @@
 }
 
 .Header__logo {
-  width: 170px;
+  /* width: 170px;
   background: url("image/uber.svg") no-repeat center;
+  
   display: block;
-  background-size: contain;
+  background-size: contain; */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-style:italic;
 }
 
 .Header__logo-image {

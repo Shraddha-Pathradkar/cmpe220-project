@@ -107,7 +107,7 @@ const PaginationTable = props => {
       inputPlaceholder: "Update the status of the order",
       showCancelButton: true,
       confirmButtonText: "Update",
-      confirmButtonColor: "#57b846",
+      confirmButtonColor: "#A7D3FF",
       showLoaderOnConfirm: true,
       inputValidator: value => {
         return new Promise(resolve => {

@@ -38,7 +38,7 @@ export function Dish(props) {
               "Your order contains items from another restaurant. Do you want to discard those and add items from this restaurant?",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#57b846",
+            confirmButtonColor: "#A7D3FF",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes"
           }).then(result => {

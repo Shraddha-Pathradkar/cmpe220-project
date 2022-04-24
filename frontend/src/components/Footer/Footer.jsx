@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="Footer">
       <div className="Footer__wrapper">
-        <img src={whiteLogo} alt="Uber Eats logo" className="Footer__logo" />
+        <div className="Footer__logo" />
       </div>
     </footer>
   );

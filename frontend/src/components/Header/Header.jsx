@@ -55,14 +55,19 @@ function Header(props) {
           {(props.isUserLoggedIn || props.isRestaurantLoggedIn) && (
             <NavigationBar />
           )}
-          {props.isUserLoggedIn && (
+          {/* {props.isUserLoggedIn && (
             <Link className="Header__logo" to={"/"}></Link>
-          )}
-          {!props.isUserLoggedIn && (
+          )} */}
+          <div style={{paddingTop:"7px"}}> 
+          <Link className="Header__logo">Food Place</Link>
+
+          </div>
+          {/* {!props.isUserLoggedIn && (
             <Link to={"/"}>
+              
               <img src={uberImage} alt="Logo" className="Header__logo-image" />
             </Link>
-          )}
+          )} */}
           {props.isUserLoggedIn && (
             <div className="Delivery_button_container">
               <span className={delivery} onClick={handleDelivery}>

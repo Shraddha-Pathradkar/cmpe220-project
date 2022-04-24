@@ -21,11 +21,12 @@ function NavigationBar(props) {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#fff" }}>
+      <IconContext.Provider value={{ color: "#fff" }} >
         {/*<div className='navbar'>*/}
-        <Link to="#" className="menu-bars">
-          <FaIcons.FaBars
-            style={{ color: "#282c34", width: "90px", height: "20px" }}
+        <Link to="#" className="menu-bars" >
+          <FaIcons.FaHamburger
+          
+            style={{ color: "#282c34", width: "100px", height: "30px",paddingRight:"20px"}}
             onClick={showSidebar}
           />
         </Link>

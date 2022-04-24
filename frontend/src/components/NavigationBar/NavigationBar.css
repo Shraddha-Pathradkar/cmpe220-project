@@ -8,7 +8,8 @@
   line-height: 24px;
   color: var(--white);
   padding: 8px 0;
-  background: var(--white);
+  /* background: var(--white); */
+  background-color: "#A7D3FF";
   cursor: pointer;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .nav-text a:hover {
-  background-color: #3fc060;
+  background-color: #A7D3FF;
 }
 
 .nav-menu-items {

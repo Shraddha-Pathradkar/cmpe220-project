@@ -110,13 +110,13 @@ function Login(props) {
   return (
     <>
       <div className="limiter">
-        <div className="container-login100">
+        <div className="container-login100" style={{}}>
           <div className="wrap-login100 p-t-85 p-b-20">
             <form
               className="login100-form validate-form"
               onSubmit={handleClick}
             >
-              <span className="login100-form-title p-b-70">Welcome back</span>
+              <span className="login100-form-title p-b-70">Welcome Back!!!</span>
               <div
                 className="wrap-input100 validate-input m-t-85 m-b-35"
                 validate="Enter email"
@@ -167,7 +167,7 @@ function Login(props) {
               <ul className="login-more p-t-190">
                 <Link to={"/userSignUp"}>
                   <li className="m-b-8">
-                    <p className="txt2">Don't have an account? Sign up here</p>
+                    <p className="txt2" style={{color:"black"}}>Don't have an account? Sign up here</p>
                   </li>
                 </Link>
               </ul>
@@ -178,7 +178,7 @@ function Login(props) {
                     {/*<p className="txt1">*/}
                     {/*	Forgot*/}
                     {/*</p>*/}
-                    <p className="txt2">Restaurant Sign up</p>
+                    <p className="txt2"style={{color:"black"}}>Restaurant Sign up</p>
                   </li>
                 </Link>
                 <Link to={"/restaurantLogin"}>
@@ -187,7 +187,7 @@ function Login(props) {
                     {/*	Don’t have an account?*/}
                     {/*</p>*/}
 
-                    <p className="txt2">Restaurant Login</p>
+                    <p className="txt2" style={{color:"black"}}>Restaurant Login</p>
                   </li>
                 </Link>
               </ul>
