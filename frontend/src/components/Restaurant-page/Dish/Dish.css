@@ -36,7 +36,7 @@
 }
 
 .Dish__inBasket {
-  border: 1px solid green;
+  border: 1px solid #A7D3FF;;
 }
 
 .Dish__inBasketCount {
@@ -46,7 +46,7 @@
   font-size: 30px;
   text-align: center;
   color: var(--white);
-  background: green;
+  background: red;
   height: 35px;
   width: 35px;
 }

@@ -43,7 +43,7 @@
 }
 
 .Basket__payment {
-  background: rgb(62, 153, 32);
+  background: black;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px, rgba(0, 0, 0, 0.04) 0px 4px 4px;
   padding: 20px;
   width: 100%;
