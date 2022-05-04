@@ -7,7 +7,7 @@
   width: calc(100% + 1px);
   z-index: 10;
   background: var(--white);
-  background-color: #A7D3FF ;
+  background-color:#4169E1 ;
 }
 
 .Header__wrapper {
