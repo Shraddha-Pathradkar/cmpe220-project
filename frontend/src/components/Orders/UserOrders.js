@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { connect } from "react-redux";
 import {
   Table,
-  TableHead,
   TableBody,
   TableRow,
   TableCell,
@@ -12,14 +11,12 @@ import {
 import "./restaurantOrders.css";
 import { Container } from "../../Container/Container";
 import axios from "axios";
-import Swal from "@sweetalert/with-react";
 import Swal2 from "sweetalert2";
 import { BACKEND_HOST, BACKEND_PORT } from "../../config";
 import { default as ReactSelect } from "react-select";
 import { OrderDeliveryTypes } from "../DropDown/OrderDeliveryTypes";
 import Option from "../DropDown/Option";
-import Test from "./modal";
-import DietryOptions from "../Header/DietryOptions";
+
 import Receipt from 'receipt';
 
 const UserOrders = props => {

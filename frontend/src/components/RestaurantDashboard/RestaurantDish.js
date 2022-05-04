@@ -2,7 +2,7 @@ import React from "react";
 import "./RestaurantDashboard.css";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
-import { setDish, setImageUrl } from "../../redux/dish";
+import { setDish } from "../../redux/dish";
 import * as MdIcons from "react-icons/md";
 
 function RestaurantDish(props) {

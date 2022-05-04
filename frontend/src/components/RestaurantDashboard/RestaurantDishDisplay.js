@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./RestaurantDashboard.css";
 import { connect } from "react-redux";
 import { RestaurantMenu } from "./RestaurantMenu";
-import { PropositionType } from "../Restaurant-page/Proposition-type/Proposition-type";
 import { BACKEND_HOST, BACKEND_PORT } from "../../config";
 import axios from "axios";
 import Swal from "sweetalert2";

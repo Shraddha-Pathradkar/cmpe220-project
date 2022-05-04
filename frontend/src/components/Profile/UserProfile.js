@@ -5,7 +5,6 @@ import { Container } from "../../Container/Container";
 import * as MdIcons from "react-icons/md";
 import axios from "axios";
 import Swal from "sweetalert2";
-import TextField from "@mui/material/TextField";
 import { setImageUrl, setUser } from "../../redux/user";
 import { useHistory } from "react-router-dom";
 import Allcountries from "../countries.json";
@@ -64,7 +63,7 @@ function UserProfile(props) {
           url: `http://${BACKEND_HOST}:${BACKEND_PORT}/users/update`,
           data: updatedData
         });
-        if (response.status == 200) {
+        if (response.status === 200) {
           Swal.fire("Successfully saved the data", "", "success");
           localStorage.setItem("user", JSON.stringify(updatedData));
           props.setUser(updatedData);
@@ -104,7 +103,7 @@ function UserProfile(props) {
           data: bodyFormData,
           headers: { "Content-Type": "multipart/form-data" }
         });
-        if (response.status == 200) {
+        if (response.status === 200) {
           props.setImage(response.data.imageUrl);
         } else {
           throw new Error(response.data.msg);

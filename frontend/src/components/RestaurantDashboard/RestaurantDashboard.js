@@ -3,7 +3,6 @@ import "./RestaurantDashboard.css";
 import { default as ReactSelect } from "react-select";
 import DashboardPreview from "./DashboardPreview";
 import * as MdIcons from "react-icons/md";
-import Allcountries from "../countries.json";
 import axios from "axios";
 import Swal from "sweetalert2";
 import { setRestaurant, setRestaurantImageUrl } from "../../redux/restaurant";
@@ -61,7 +60,7 @@ function RestaurantDashboard(props) {
         }
       }
     })();
-  }, []);
+  });
 
   const handleClick = async event => {
     try {
@@ -106,7 +105,7 @@ function RestaurantDashboard(props) {
           url: `http://${BACKEND_HOST}:${BACKEND_PORT}/restaurants/update`,
           data: updatedData
         });
-        if (response.status == 200) {
+        if (response.status === 200) {
           Swal.fire("Successfully saved the data", "", "success");
           localStorage.setItem("restaurant", JSON.stringify(updatedData));
           props.setRestaurant(updatedData);
@@ -143,7 +142,7 @@ function RestaurantDashboard(props) {
           data: bodyFormData,
           headers: { "Content-Type": "multipart/form-data" }
         });
-        if (response.status == 200) {
+        if (response.status === 200) {
           props.setRestaurantImageUrl(response.data.imageUrl);
         } else {
           throw new Error(response.data.msg);
@@ -267,7 +266,7 @@ function RestaurantDashboard(props) {
                 <img
                   src={props.restaurantData && props.restaurantData.imageUrl}
                   className="RdRestaurants-choose__photo"
-                  alt={"Restaurant Photo"}
+                  // alt={"Restaurant Photo"}
                 />
                 <input
                   type="file"
